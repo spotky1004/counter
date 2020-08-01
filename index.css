@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+#test-counter {
+  height: 20vh; width: 80vw;
+}
