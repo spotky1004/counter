@@ -1,4 +1,4 @@
-number = 1e34;
+number = 0;
 function increment(num) {
   number += num;
   counter('#test-counter', number, 20);
