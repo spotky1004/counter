@@ -31,6 +31,7 @@ function counter(counterElement, num, digit) {
       num = '0' + num;
     }
   }
+  elementThis.style.width = (3.3*digit+0.3) + 'vh';
   try {
     setDigitPos(counterElement, num, digit);
   } catch {
