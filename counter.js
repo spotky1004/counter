@@ -10,11 +10,11 @@ function setDigitPos(counterElement, num, digit) {
   for (var i = 0; i < digit; i++) {
     digitThis = document.querySelector(counterElement + ' > .counterNumArea > .counterNumFrame:nth-child(' + (i+1) + ') > div');
     if (num[i] == 'e') {
-      digitThis.style.top = '-60vh';
+      digitThis.style.top = '-60.4vh';
     } else if (num[i] == '.') {
-      digitThis.style.top = '-66vh';
+      digitThis.style.top = '-66.4vh';
     } else {
-      digitThis.style.top = '-' + num[i]*6 + 'vh';
+      digitThis.style.top = '-' + (num[i]*6+0.4) + 'vh';
     }
   }
 }
@@ -34,7 +34,7 @@ function counter(counterElement, num, digit) {
   try {
     setDigitPos(counterElement, num, digit);
   } catch {
-    numArea = document.createElement('div');
+    numArea = document.createElement('span');
     numArea.className += "counterNumArea";
     elementThis.appendChild(numArea);
     numAreaElement = document.querySelector(counterElement + ' > .counterNumArea');
